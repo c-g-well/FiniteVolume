@@ -1,0 +1,23 @@
+
+
+Method implementation in python 
+	#routine to go through all cell edges : what is the form 
+	#two vector q_n and q_n+1 for the upwind method
+
+CFL conditon
+	dont need 
+
+Flux function 
+	citation 4 hesthaven ch 6 finite volumes pg 145/151 
+
+
+Convergence analysis
+	1-norm 
+
+$$ f^*(u_l, u_r) = \begin{cases}
+    f(u_l) & \text{if } x^- \geq 0 \\
+    f^*_l & \text{if } s^* \geq 0 \geq s^- \\
+	f^*_r \text{if} s^+ \geq 0 \geq s^*\\
+	f(u_r) \text{if} s^+ \leq 0
+\end{cases}
+$$
